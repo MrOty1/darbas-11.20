@@ -1,0 +1,127 @@
+body{
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Verdana;
+    overflow-x: hidden;
+    text-align: center;
+    color: black;
+    white-space: nowrap;
+    font-size: 2vh;
+    margin: 0;
+    padding: 0;
+}
+
+.hiddenpage{
+    background: rgb(31, 31, 31);
+}
+
+.main{
+    background-image: url(images/background.png)
+}
+
+a{
+    display: contents;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.title{
+    font-size: 3vh;
+    padding: 1vh 1vh;
+    background: rgba(255, 255, 255, 0.5);
+    border-bottom: 0.2vw black solid;
+    width: 100vw;
+    height: 3.4vh;
+    position: fixed;
+    top: 0;
+    text-align: left;
+}
+
+h1{
+    top: 0;
+    text-align: left;
+    margin-left: 5%;
+    color: white;
+    text-shadow: white 0 0 5vh;
+}
+
+.maintext p{
+    border-radius: 5%;
+    margin-left: 5vh;
+    padding: 1vh 1vh;
+    margin-top: 10%;
+    margin-bottom: -8%;
+    width: 74vh;
+    background: rgba(255, 255, 255, 0.5);
+    text-wrap: pretty;
+}
+
+.images{
+    border-radius: 5%;
+    left: 74%;
+    top: 45%;
+    position: absolute;
+    background: white;
+    width: 50vh;
+    height: 50vh;
+    animation: changeimg 10s ease-in-out infinite, imgintro 1s;
+}
+
+footer{
+    font-size: 3vh;
+    background: rgba(255, 255, 255, 0.5);
+    border-top: 0.2vw black solid;
+    width: 100vw;
+    height: 3.4vh;
+    position: fixed;
+    bottom: 0;
+    animation: popin 1s;
+}
+
+@keyframes changeimg{
+    0%{
+        background-image: url(images/slide/1.jpg);
+        background-size: cover;
+    }
+    25%{
+        background-image: url(images/slide/2.jpg);
+        background-size: cover;
+    }
+    50%{
+        background-image: url(images/slide/3.jpg);
+        background-size: cover;
+    }
+    75%{
+        background-image: url(images/slide/4.jpg);
+        background-size: cover;
+    }
+    100%{
+        background-image: url(images/slide/1.jpg);
+        background-size: cover;
+    }
+}
+
+@keyframes textintro{
+    0%{
+        opacity: 0%;
+        margin-left: 0%;
+    }
+    100%{
+        opacity: 100%;
+        margin-left: 5%;
+    }
+}
+
+@keyframes popin{
+    0%{
+        height: 0;
+        font-size: 0;
+    }
+    100%{
+        height: 3.6vh;
+    }
+}
