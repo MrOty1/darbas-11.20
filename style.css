@@ -51,23 +51,37 @@ h1{
 
 .maintext p{
     border-radius: 5%;
+    text-align: left;
     margin-left: 5vh;
     padding: 1vh 1vh;
     margin-top: 10%;
     margin-bottom: -8%;
-    width: 74vh;
+    width: 84vh;
     background: rgba(255, 255, 255, 0.5);
     text-wrap: pretty;
 }
 
+.maintext h1{
+    color: white;
+    text-align: left;
+    margin-left: 5vh;
+    margin-top: 10%;
+    margin-bottom: -8%;
+    width: 74vh;
+}
+
+.maintext{
+    margin-bottom: 15%;
+}
+
 .images{
     border-radius: 5%;
-    left: 74%;
-    top: 45%;
-    position: absolute;
+    left: 60%;
+    top: 20%;
+    position: fixed;
     background: white;
-    width: 50vh;
-    height: 50vh;
+    width: 75vh;
+    height: 75vh;
     animation: changeimg 10s ease-in-out infinite, imgintro 1s;
 }
 
