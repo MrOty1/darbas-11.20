@@ -110,30 +110,39 @@ a:hover{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    animation-delay: 10s;
 }
 
 a .images:nth-child(1){
     animation: changeimg1 10s ease-in-out infinite;
     position: fixed;
-    right: 0%;
+    right: -10%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    animation-delay: 10s;
 }
 
 a .images:nth-child(2){
     animation: changeimg2 10s ease-in-out infinite;
     position: fixed;
-    left: 0%;
+    left: -10%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    animation-delay: 10s;
 }
 
 @keyframes changeimg1{
     0%{
         background-image: url(images/slide/1.jpg);
         background-size: cover;
+        right: -10%;
+    }
+    5%{
+        background-image: url(images/slide/1.jpg);
+        background-size: cover;
+        right: 0%;
     }
     40%{
         background-image: url(images/slide/1.jpg);
@@ -171,6 +180,12 @@ a .images:nth-child(2){
     0%{
         background-image: url(images/slide/3.jpg);
         background-size: cover;
+        left: -10%;
+    }
+    5%{
+        background-image: url(images/slide/3.jpg);
+        background-size: cover;
+        left: 0%;
     }
     40%{
         background-image: url(images/slide/3.jpg);
