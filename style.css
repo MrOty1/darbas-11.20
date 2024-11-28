@@ -107,42 +107,48 @@ a:hover{
     top: 7.5%;
     width: 10%;
     height: 85%;
+    background-size: 100% 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    animation-delay: 10s;
 }
 
 a .images:nth-child(1){
-    animation: changeimg1 10s ease-in-out infinite;
+    animation: intimg1 1s ease-out, changeimg1 10s ease-in-out infinite;
     position: fixed;
-    right: -10%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    animation-delay: 10s;
+    right: 0%;
+    animation-delay: 5s;
 }
 
 a .images:nth-child(2){
-    animation: changeimg2 10s ease-in-out infinite;
+    animation: intimg2 1s ease-out, changeimg2 10s ease-in-out infinite;
     position: fixed;
-    left: -10%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    animation-delay: 10s;
+    left: 0%;
+    animation-delay: 5s;
+}
+
+@keyframes intimg1{
+    0%{
+        right: -15%;
+    }
+    100%{
+        right: 0%;
+    }
+}
+
+@keyframes intimg2{
+    0%{
+        left: -15%;
+    }
+    100%{
+        left: 0%;
+    }
 }
 
 @keyframes changeimg1{
     0%{
         background-image: url(images/slide/1.jpg);
         background-size: cover;
-        right: -10%;
-    }
-    5%{
-        background-image: url(images/slide/1.jpg);
-        background-size: cover;
-        right: 0%;
     }
     40%{
         background-image: url(images/slide/1.jpg);
@@ -175,17 +181,10 @@ a .images:nth-child(2){
         right: 0%;
     }
 }
-
 @keyframes changeimg2{
     0%{
         background-image: url(images/slide/3.jpg);
         background-size: cover;
-        left: -10%;
-    }
-    5%{
-        background-image: url(images/slide/3.jpg);
-        background-size: cover;
-        left: 0%;
     }
     40%{
         background-image: url(images/slide/3.jpg);
@@ -213,6 +212,7 @@ a .images:nth-child(2){
         left: -15%;
     }
     100%{
+        background-image: url(images/slide/1.jpg);
         background-image: url(images/slide/3.jpg);
         background-size: cover;
         left: 0%;
